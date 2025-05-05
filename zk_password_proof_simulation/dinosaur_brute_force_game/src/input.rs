@@ -1,29 +1,3 @@
-// use crossterm::event::{self, Event, KeyCode, KeyEventKind};
-// use std::io;
-// use crate::app::AppState;
-
-// pub fn handle_input(app: &mut AppState) -> io::Result<bool> {
-//     if event::poll(std::time::Duration::from_millis(100))? {
-//         if let Event::Key(key_event) = event::read()? {
-//             if key_event.kind == KeyEventKind::Press {
-//                 match key_event.code {
-//                     KeyCode::Char('q') => return Ok(true), // Quit
-//                     KeyCode::Enter => {
-//                         app.submit_guess(); // Check the guess
-//                     },
-//                     KeyCode::Char(c) => {
-//                         app.current_guess.push(c);
-//                     },
-//                     KeyCode::Backspace => {
-//                         app.current_guess.pop();
-//                     },
-//                     _ => {}
-//                 }
-//             }
-//         }
-//     }
-//     Ok(false)
-// }
 
 use crossterm::event::{self, Event, KeyCode, KeyEvent};
 use crate::app::AppState;
