@@ -98,3 +98,28 @@ pub const CACTUS_ART: &str = r#"
 
 "#;
 
+pub const CACTUS_ART_TWO: &str = r#"
+
+    ,*-.
+    |  |
+,.  |  |
+| |_|  | ,.
+`---.  |_| |
+    |  .--`
+    |  |
+    |  |
+
+
+
+"#;
+
+pub const DINO_ART_TWO: &str = r#"
+
+              __
+              / _)
+     _/\/\/\_/ /
+   _|         /
+ _|  (  | (  |
+/__.-'|_|--|_|
+
+"#;

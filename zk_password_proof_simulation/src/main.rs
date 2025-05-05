@@ -69,10 +69,12 @@ fn run_game_loop<B: ratatui::backend::Backend>(
         terminal.draw(|f| ui::draw(f, app))?;
 
         if input::handle_input(app)? {
+            terminal.draw(|f| ui::draw(f, app))?;
             break;
         }
 
-        if app.game_over {
+        if app.game_over || app.success {
+            terminal.draw(|f| ui::draw(f, app))?;
             std::thread::sleep(Duration::from_millis(1500));
             break;
         }
