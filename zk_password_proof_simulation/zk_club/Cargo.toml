@@ -1,0 +1,9 @@
+[package]
+name = "zk_club"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ratatui = "0.29.0"
+crossterm = "0.29.0"
+colored = "3.0.0"

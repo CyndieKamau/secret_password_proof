@@ -211,6 +211,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "dinosaur_brute_force_game"
+version = "0.1.0"
+dependencies = [
+ "colored",
+ "crossterm 0.29.0",
+ "ratatui",
+ "rpassword",
+ "sha2",
+]
+
+[[package]]
 name = "document-features"
 version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -773,12 +784,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
 
 [[package]]
-name = "zk_password_proof_simulation"
+name = "zk_club"
 version = "0.1.0"
 dependencies = [
  "colored",
  "crossterm 0.29.0",
  "ratatui",
- "rpassword",
- "sha2",
 ]

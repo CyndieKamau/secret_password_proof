@@ -1,0 +1,11 @@
+[package]
+name = "dinosaur_brute_force_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sha2 = "0.10.9"
+rpassword = "7.4.0"
+colored = "3.0.0"
+ratatui = "0.29.0"
+crossterm = "0.29.0"
