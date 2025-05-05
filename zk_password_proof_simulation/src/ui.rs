@@ -18,8 +18,8 @@ pub fn draw(f: &mut Frame, app: &AppState) {
         .direction(Direction::Vertical)
         .constraints([
             Constraint::Length(10),   // Welcome banner
-            Constraint::Min(15),     // Game canvas
-            Constraint::Length(3),   // Input line
+            Constraint::Min(10),     // Game canvas
+            Constraint::Length(8),   // Input line
         ])
         .split(size);
 
@@ -99,7 +99,7 @@ fn build_game_frame(app: &AppState) -> String {
     }
 
     let dino_lines: Vec<&str> = DINO_ART.lines().collect();
-    let cactus_lines: Vec<&str> = CACTUS_ART_TWO.lines().collect();
+    let cactus_lines: Vec<&str> = CACTUS_ART.lines().collect();
 
    
     let spacing: usize = match app.attempts_left {

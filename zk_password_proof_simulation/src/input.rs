@@ -35,11 +35,11 @@ pub fn handle_input(app: &mut AppState) -> std::io::Result<bool> {
             match code {
                 KeyCode::Char(c) => {
                     app.current_guess.push(c);
-                    println!("Typed: {}", c); // Debug
+                    //println!("Typed: {}", c); 
                 }
                 KeyCode::Backspace => {
                     app.current_guess.pop();
-                    println!("Backspace");
+                    //println!("Backspace");
                 }
                 KeyCode::Enter => {
                     let guess = app.current_guess.trim();

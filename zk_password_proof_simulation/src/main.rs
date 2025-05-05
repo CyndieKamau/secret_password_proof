@@ -15,6 +15,7 @@ mod zk;
 use crate::app::AppState;
 use crate::zk::hash_password;
 use crate::input::handle_input;
+use crate::assets::WELCOME_BANNER;
 use std::{time::{Duration, Instant}};
 
 use ratatui::backend::CrosstermBackend;
@@ -30,7 +31,20 @@ use rpassword::read_password;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 
-    println!("🔐 Enter your secret password (it won’t be shown):");
+    println!("Welcome to the ");
+    println!("{}", WELCOME_BANNER);
+    println!("The point of this game is to showcase the difference between ZK and Brute Forcing (Guessing till you get it right)!\n");
+    println!("In this game:");
+    println!("🔐 One user will set a *secret password*");
+    println!("🧠 Your friends will then try to guess it!");
+    println!();
+    println!("❌ With each wrong guess, the cactus moves closer...");
+    println!("🦴 When it reaches you, it's Game Over.\n");
+    println!();
+    println!("You have 5 attempts to try and guess the secret password!");
+    println!("==============================================================");
+    println!("🔐 Enter your secret password (it won't be shown):");
+
     io::stdout().flush().unwrap();
     let password = read_password().expect("Failed to read password");
     //let password = "hunter2".to_string();
